@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+}
+body{
+    text-align: center;
+    }
+.carousel{ 
+    width: 70%;
+    margin: 10px auto 10px auto;
+  
+}
+.card-img-top{
+    width: 100%;
+    background-image:url("images/pattern-bg.svg");
+    background-size: cover;
+}
+.card{
+    border: none;
+}
+.cus-carousel-control-next, .cus-carousel-control-prev{
+    position: absolute;
+    top: 37%;
+    bottom:auto;
+    height: 31px;
+    background-color: white;
+    opacity: 1;
+    width:13%;
+    min-width: 10%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    
+}
+.cus-carousel-control-next{
+    right: 38%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.cus-carousel-control-prev{
+    left:38%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.fas {
+    color: gray;
+}
+span {
+    color: gray;
+}
+.name{
+    font-size: 0.9em;
+}
+
+@media (min-width: 1200px) {
+   
+    .card-body {
+        position: absolute;
+        left: 10px;
+    }
+}
