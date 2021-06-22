@@ -1,10 +1,129 @@
 *{
     margin: 0;
+    box-sizing: border-box;
 }
 body{
-    text-align: center;
+    font-size: 28px;
+    background: url(images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: bottom;
+}
+.container-fluid {
+    position: relative;
+    width: 100%;
+    margin: 40px;
+}
+.img {
+    position: relative;
+    background-image:url("images/pattern-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 55%;
+    z-index: -1;
+    margin-left: auto;
+}
+img {
+    width: 70%;
+    padding: 50px;
+}
+.text {
+    background-image: url("images/pattern-quotes.svg");
+    background-size:15%;
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+    width: 55%;
+    position: absolute;
+    z-index: 1;
+    left:0;
+    top: 15%;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+span {
+    color: gray;
+}
+.name{
+    font-size: 0.8em;
+}
+.cus-carousel-control-next, .cus-carousel-control-prev{
+    position: relative;
+    bottom: 78px;
+    box-shadow: 5px 5px 10px dimgray;
+    cursor: pointer;
+    width: 40px;
+    background-color: white;
+    border: none;
+    height: 40px;
+    font-size: 1rem;
+    
+}
+.cus-carousel-control-next{
+    left: 665px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.cus-carousel-control-prev{
+    left: 675px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.fas {
+    color: gray;
+}
+@media (max-width: 1200px) {
+    body{
+        padding: 0;
     }
-.carousel{ 
+    .container-fluid {
+        margin-left: auto;
+        margin-right: auto;
+        width: 375px;
+    }
+    .img  {
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        max-width: 350px;
+        margin-left: auto;
+
+    }
+    .text {
+        position: relative;
+        width: 100%;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        font-size: 0.7em;
+        line-height: 1.5;
+        text-align: center;
+        margin: 40px auto 20px auto;
+    }
+    .cus-carousel-control-next, .cus-carousel-control-prev{
+        position: absolute ;
+        width: 40px;
+        height: 35px;
+        top: 280px;
+    }
+    .cus-carousel-control-next{
+        left: 190px;
+    }
+    .cus-carousel-control-prev{
+        left: 151px;
+
+    }
+    span {
+        display: block;
+        width: 100%;
+    }
+}
+/* .carousel{ 
     width: 70%;
     margin: 10px auto 10px auto;
   
@@ -58,4 +177,4 @@ span {
         position: absolute;
         left: 10px;
     }
-}
+} */
